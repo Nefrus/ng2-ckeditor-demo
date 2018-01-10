@@ -1,20 +1,231 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div (click)="click($event)">
+  <ckeditor [config]="config" (change)="click($event)" [(ngModel)]="ckeditorContent"></ckeditor>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div #T  (click)="append(T)">
 
+  <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+    style="font-family:&quot;Times New Roman&quot;,serif"><strong><span style="font-size:16.0pt"><span
+    style="font-family:宋体">个人履历表</span></span></strong></span></span></p>
+
+  <table align="center" border="1" cellspacing="0" class="Table"
+         style="border-collapse:collapse; border:solid windowtext 1.0pt; width:539px">
+    <tbody>
+    <tr>
+      <td style="width:52.75pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">姓&nbsp; 名</span></span></span></span></p>
+      </td>
+      <td style="width:54.55pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">夏晨翔</span></span></span></span></p>
+      </td>
+      <td style="width:52.45pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">性&nbsp; 别</span></span></span></span></p>
+      </td>
+      <td style="width:57.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">男</span></span></span></span></p>
+      </td>
+      <td style="width:60.9pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">年龄</span></span></span></span></p>
+      </td>
+      <td style="width:126.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="background-color:yellow"><span
+          style="font-family:仿宋_GB2312"><span style="color:black">21</span></span></span></span></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="height:37.1pt; width:52.75pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">学历/学位</span></span></span></span></p>
+      </td>
+      <td style="height:37.1pt; width:54.55pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+      <td style="height:37.1pt; width:52.45pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">职称</span></span></span></span></p>
+      </td>
+      <td style="height:37.1pt; width:57.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+      <td style="height:37.1pt; width:60.9pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">身份证号</span></span></span></span></p>
+      </td>
+      <td style="height:37.1pt; width:126.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="height:24.85pt; width:52.75pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">参加工作时间</span></span></span></span></p>
+      </td>
+      <td style="height:24.85pt; width:54.55pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+      <td style="height:24.85pt; width:52.45pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">资格证书/级别</span></span></span></span></p>
+      </td>
+      <td style="height:24.85pt; width:57.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+      <td style="height:24.85pt; width:60.9pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">证书编号</span></span></span></span></p>
+      </td>
+      <td style="height:24.85pt; width:126.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="height:22.95pt; width:52.75pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">毕业学校</span></span></span></span></p>
+      </td>
+      <td colspan="3" style="height:22.95pt; width:164.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+      <td style="height:22.95pt; width:60.9pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span
+          style="font-family:仿宋_GB2312">专业</span></span></span></p>
+      </td>
+      <td style="height:22.95pt; width:126.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="height:22.85pt; width:52.75pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">业务方向</span></span></span></span></p>
+      </td>
+      <td colspan="3" style="height:22.85pt; width:164.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+      <td style="height:22.85pt; width:60.9pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span
+          style="font-family:仿宋_GB2312">备选方向</span></span></span></p>
+      </td>
+      <td style="height:22.85pt; width:126.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="height:22.85pt; width:52.75pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">联系电话</span></span></span></span></p>
+      </td>
+      <td colspan="3" style="height:22.85pt; width:164.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+      <td style="height:22.85pt; width:60.9pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312">人员所在地</span></span></span>
+        </p>
+      </td>
+      <td style="height:22.85pt; width:126.3pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center">&nbsp;</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="height:184.15pt; width:52.75pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">个</span></span></span></span></p>
+
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">人</span></span></span></span></p>
+
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">履</span></span></span></span></p>
+
+        <p style="margin-left:0cm; margin-right:0cm; text-align:center"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">历</span></span></span></span></p>
+      </td>
+      <td colspan="5" style="height:184.15pt; vertical-align:top; width:351.5pt">
+        <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">教育经历：</span></span></span></span></p>
+
+        <p style="margin-left:0cm; margin-right:0cm; text-align:justify">&nbsp;</p>
+
+        <p style="margin-left:0cm; margin-right:0cm; text-align:justify">&nbsp;</p>
+
+        <p style="margin-left:0cm; margin-right:0cm; text-align:left"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">工作经历：</span></span></span></span></p>
+
+        <p style="margin-left:0cm; margin-right:0cm; text-align:left">&nbsp;</p>
+
+        <p style="margin-left:0cm; margin-right:0cm; text-align:left"><span style="font-size:10.5pt"><span
+          style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span
+          style="color:black">主要参与的项目（如果参与多个大中型项目，以下内容可以按项目多次填写）</span></span></span></span></p>
+
+        <ol start="12" style="list-style-type:lower-alpha">
+          <li style="text-align:left" value="50"><span style="font-size:10.5pt"><span
+            style="font-family:&quot;Times New Roman&quot;,serif"><strong><span
+            style="font-family:仿宋_GB2312">项目名称：</span></strong></span></span></li>
+          <li style="text-align:left" value="50"><span style="font-size:10.5pt"><span
+            style="font-family:&quot;Times New Roman&quot;,serif"><strong><span
+            style="font-family:仿宋_GB2312">项目时间：</span></strong></span></span></li>
+          <li style="text-align:left" value="50"><span style="font-size:10.5pt"><span
+            style="font-family:&quot;Times New Roman&quot;,serif"><strong><span
+            style="font-family:仿宋_GB2312">项目简介：</span></strong></span></span></li>
+        </ol>
+
+        <ol start="12" style="list-style-type:lower-alpha">
+          <li style="text-align:justify" value="50"><span style="font-size:10.5pt"><span
+            style="font-family:&quot;Times New Roman&quot;,serif"><strong><span
+            style="font-family:仿宋_GB2312">责任描述：</span></strong></span></span></li>
+          <li style="text-align:justify" value="50"><span style="font-size:10.5pt"><span
+            style="font-family:&quot;Times New Roman&quot;,serif"><strong><span
+            style="font-family:仿宋_GB2312">完成工作：</span></strong></span></span></li>
+        </ol>
+
+        <p style="margin-left:0cm; margin-right:0cm; text-align:left">&nbsp;</p>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+<div #T1  (click)="append(T1)">
+
+  <p style="margin-left:0cm; margin-right:0cm; text-align:justify"><span style="font-size:10.5pt"><span
+    style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312"><span style="color:black">填表人申明：</span></span></span></span>
+  </p>
+
+  <ol>
+    <li style="text-align:justify"><span style="font-size:10.5pt"><span
+      style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312">填表人保证上述各项内容填写真实、准确，无隐瞒事实。如有不实，一切责任自负。</span></span></span>
+    </li>
+    <li style="text-align:justify"><span style="font-size:10.5pt"><span
+      style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-family:仿宋_GB2312">填表人同意采购单位就上述内容进行调查，并对调查给予协助。</span></span></span>
+    </li>
+  </ol>
+
+</div>
